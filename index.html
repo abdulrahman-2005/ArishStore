@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arish Phones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style id="css-mode"></style>
+</head>
+<body>
+    <header>
+        <h1>Arish Phones</h1>
+        <input type="text" id="search" placeholder="Search for phones...">
+    </header>
+    <main>
+        <aside>
+            <button id="mode-toggle">🌙</button>
+            <h2>Filters</h2>
+            <select id="store-filter">
+                <option value="">All Stores</option>
+            </select>
+            <select id="location-filter">
+                <option value="">All Locations</option>
+            </select>
+            <select id="company-filter">
+                <option value="">All Companies</option>
+            </select>
+            <input type="number" id="min-price" placeholder="Min Price">
+            <input type="number" id="max-price" placeholder="Max Price">
+
+            <h2>Sort By</h2>
+            <select id="sort-by">
+                <option >...</option>
+                <option value="price">Price (Ascending)</option>
+                <option value="price-desc">Price (Descending)</option>
+                <option value="rating">Rating (Ascending)</option>
+                <option value="rating-desc">Rating (Descending)</option>
+            </select>
+
+        </aside>
+        <section id="phone-list"></section>
+    </main>
+    <script src="./data/phones-data.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
